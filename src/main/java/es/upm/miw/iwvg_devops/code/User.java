@@ -69,7 +69,4 @@ public class User {
                 ", fractions=" + fractions +
                 '}';
     }
-
-    private class Fraction {
-    }
 }
