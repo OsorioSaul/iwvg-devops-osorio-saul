@@ -11,7 +11,7 @@ class FractionTest {
     @Test
     void testIsProper() {
         assertEquals(true, new Fraction(4, 5).isProper());
-        assertEquals(false, new Fraction(5, 4).isImproper());
+        assertEquals(false, new Fraction(5, 4).isProper());
     }
 
     @Test
