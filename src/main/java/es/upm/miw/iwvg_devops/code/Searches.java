@@ -1,7 +1,5 @@
 package es.upm.miw.iwvg_devops.code;
 
-import org.apache.logging.log4j.LogManager;
-
 import java.util.Objects;
 import java.util.stream.Stream;
 
@@ -32,7 +30,7 @@ public class Searches {
 
     public Stream<String> findUserFamilyNameInitialByAnyProperFraction() {
         return new UsersDatabase().findAll().filter(user -> user.getFractions().stream()
-                .anyMatch(Fraction::isProper))
+                        .anyMatch(Fraction::isProper))
                 .map(user -> String.valueOf(user.getFamilyName().charAt(0)));
     }
 
