@@ -40,7 +40,10 @@ class SearchesTest {
                 .collect(Collectors.toList()));
     }
 
+    @Test
     void testFindDecimalFractionByUserName() {
+        assertEquals(List.of(0.0, 1.0, 2.0, 0.2, -0.5, 0.5, 1.0), new Searches().findDecimalFractionByUserName("Oscar")
+                .collect(Collectors.toList()));
     }
 
     void testFindDecimalFractionBySignFraction() {
